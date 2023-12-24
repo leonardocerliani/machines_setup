@@ -12,7 +12,7 @@
 Sometimes the autorun does not work. Check out these videos: [1](https://www.youtube.com/watch?v=ULSFaGmIaUo),[2](https://www.youtube.com/watch?v=KfSxpxKLjWU)
 
 ### Enable bidirectional cp/paste
-General >> Advanced >> Shared Clipboard: Bidirectional
+`General >> Advanced >> Shared Clipboard: Bidirectional`
 
 
 ## Desktop manager
