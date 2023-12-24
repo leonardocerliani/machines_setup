@@ -37,3 +37,9 @@ If you use ubuntu/gnome, **remove animations** :
 - twingate
 - x2goclient
 
+## Tweaks
+### Screen goes blank after a few seconds
+Despite setting the option to 15' in the Power Management.
+It is suggested [here](https://askubuntu.com/questions/826190/ubuntu-16-04-lts-64bit-screen-goes-black-every-15-seconds) to issue `xset -dpms`
+
+
