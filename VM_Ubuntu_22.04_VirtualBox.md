@@ -28,14 +28,17 @@ If you use ubuntu/gnome, **remove animations** :
 - [Gogh terminal themes](https://gogh-co.github.io/Gogh/) Novel / Dracula
 
 
+- `btop` and `htop` : resources monitor
+- `nnn` : file manager
+- `micro` : terminal text editor `curl http://getmic.ro | bash`
+- `docker` : `sudo apt install docker.io`
+- `vscode` : text editor
+- `atom` + `rmate` : text editor
+- `obsidian.md` : markdown editor
 
-- htop
-- btop
-- micro `curl http://getmic.ro | bash`
-- `sudo apt install docker.io`
-- vscode
-- twingate
-- x2goclient
+## Remote connectivity
+- `twingate`
+- `x2goclient`
 
 ## Tweaks
 ### Screen goes blank after a few seconds
