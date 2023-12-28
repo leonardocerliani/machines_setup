@@ -40,6 +40,10 @@ If you use ubuntu/gnome, **remove animations** :
 - `twingate`
 - `x2goclient`
 
+## Initial settings
+### Add user(s) to the docker group
+`sudo usermod -aG docker $USER`
+
 ## Tweaks
 
 ### Screen goes blank after a few seconds
