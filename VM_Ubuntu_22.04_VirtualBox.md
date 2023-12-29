@@ -52,3 +52,8 @@ It is suggested [here](https://askubuntu.com/questions/826190/ubuntu-16-04-lts-6
 
 ### VirtualBox installation fails due to security restrictions 
 In Mac OS (Mojave in my case). To fix this, check [here](https://osxdaily.com/2018/12/31/install-run-virtualbox-macos-install-kernel-fails/)
+
+### Expanding the disk size in Parallels Desktop
+See [here](https://kb.parallels.com/en/129758) for instructions
+
+
