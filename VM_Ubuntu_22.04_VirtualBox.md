@@ -46,7 +46,8 @@ If you use ubuntu/gnome, **remove animations** :
 
 ### Install screenshot tool
 from [here](https://extensions.gnome.org/extension/1112/screenshot-tool/)
-This requires installing the [GNOME shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) and the `gnome-screenshot` (using apt)
+This requires installing the [GNOME shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) and the `gnome-screenshot` (using apt).
+I then remapped the keybindings to capture an area onto `CMD + 4`.
 
 ## Tweaks
 
