@@ -6,6 +6,7 @@ Generic procedure to connect to the remote server without password.
 - Check that `~/.ssh` exists both in the local machine and on the server, otherwise create it 
 - Check if `~/.ssh/id_rsa.pub` - as well as the private key - exists, otherwise create it with `ssh-keygen`. Other options are available, e.g. `ssh-keygen -t rsa -b 4096 -C "pippo@remote.server.com"`
 - Copy the public key in the `authorized_keys` on the server with `ssh-copy-id pippo@remote.server.com`
+- If everything went well, you should be able to `ssh pippo@remote.server.com` without pw
 
 ---
 
