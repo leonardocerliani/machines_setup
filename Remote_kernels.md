@@ -5,7 +5,7 @@ The main idea is to fw a local port on the remote server, so that the messages t
 
 Then we launch a jupyter nb session on the remote machine, and finally we connect Colab to the remote server through the specified https token.
 
-Importantly, we usually want to use a specific conda/virtual environment, therefore we should first activate it before launchin thhe jupyter notebook on the server
+Importantly, we usually want to use a specific conda/virtual environment, therefore we should first activate it on the _remote_ server before launching the jupyter notebook server.
 
 ---
 
