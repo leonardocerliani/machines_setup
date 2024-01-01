@@ -44,6 +44,9 @@ If you use ubuntu/gnome, **remove animations** :
 ### Add user(s) to the docker group
 `sudo usermod -aG docker $USER`
 
+### Install screenshot tool
+from [here](https://extensions.gnome.org/extension/1112/screenshot-tool/)
+
 ## Tweaks
 
 ### Screen goes blank after a few seconds
