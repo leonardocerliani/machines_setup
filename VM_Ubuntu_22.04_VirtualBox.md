@@ -36,7 +36,7 @@ Use `bash` in scripts to be POSIX compliant. However for navigating from the she
 - `micro` : terminal text editor `curl http://getmic.ro | bash`
 - `docker` : `sudo apt install docker.io`
 - `vscode` : text editor
-- `atom` + `rmate` : text editor
+- `atom` + `rmate`
 - `obsidian.md` : markdown editor
 
 ## Remote connectivity
