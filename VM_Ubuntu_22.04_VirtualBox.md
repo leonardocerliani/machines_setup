@@ -22,6 +22,9 @@ use xfce4 as default for the VM (gnome gives keypress latency)
 If you use ubuntu/gnome, **remove animations** :
 `Settings >> Accessibility >> Disable Animations`
 
+## Shell
+Use `bash` in scripts to be POSIX compliant. However for navigating from the shell it might be handy to use `fish`. Eventually, you want to setup a `zsh` environment which has the options of `fish`, e.g. by using Oh My Zsh.
+
 ## Software to install
 - [kinto.sh](kinto.sh) (install using Ubuntu on Xorg)
 
