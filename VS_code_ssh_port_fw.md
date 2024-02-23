@@ -1,5 +1,14 @@
 # Remote SSH and port forwarding with VS code
 
+* [SSH from the terminal with username and pw](#ssh-from-the-terminal-with-username-and-pw)
+* [SSH with public key](#ssh-with-public-key)
+* [Connection and port forwarding using VS code](#connection-and-port-forwarding-using-vs-code)
+	+ [Create a local `.ssh/config` file](#create-a-local-sshconfig-file)
+	+ [Install the Remote SSH extension](#install-the-remote-ssh-extension)
+	+ [Port forwarding from VS code](#port-forwarding-from-vs-code)
+* [Conclusion](#conclusion)
+
+
 Many services running on servers provide web interfaces on a specific port, e.g. RStudio (8787), jupyter notebooks (8888), pgAdmin (5432), to name a few.
 
 In many cases, it is not possible or not advisable to use them on an X interface directly on the server (e.g. with `ssh -X`). Rather it's convenient to forward to the remote server the calls we make to the local port on our local computer, so that we can use the web interface in our local browser.
