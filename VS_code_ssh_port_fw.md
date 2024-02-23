@@ -120,7 +120,7 @@ This makes working on storm more efficient, intuitive and neat. It also dramatic
 
 Also, you can install the Python extension of VS code, create python virtual environments and develop your python scripts inside VS code using those virtual environments.
 
-Last but not least, as already mentioned, the access via public key makes connecting to storm faster and more secure. Indeed, the same method is the only accept nowadays to push locally developed code to your GitHub repos, so here you also learnt how to do that.
+Last but not least, as already mentioned, the access via public key makes connecting to storm faster and more secure. Indeed, the same method (i.e. public key) is the only one accepted nowadays by GitHub to push locally developed code to your online repos, so now you also know how to do that.
 
 all the best,\
 leonardo
