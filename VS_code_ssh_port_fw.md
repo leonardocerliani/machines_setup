@@ -80,7 +80,7 @@ At this point open VS code and install the Remote SSH extension.
 
 ![](imgs/vscode_remote_ssh.png)
 
-You might have to restart VS code (or not). After this, you will see appearing in the bottom-left corner a green are with sort of a connection symbol. If you click on that you will be prompted to connect to a host.
+You might have to restart VS code (or not). After this, you will see appearing in the bottom-left corner a green area with sort of a connection symbol. If you click on that you will be prompted to connect to a host.
 
 VS code will read the config file we just edited and prompt us the possible connections.
 
@@ -100,7 +100,18 @@ Now it finally comes the part of port forwarding. In the terminal, we can open t
 All of these services on the remote storm server will now be available in our local browser. Specifically, we will have the following service at the corresponding ports:
 
 - jupyter notebook at `localhost:8888`
-- RStudio at `localhost 8787`
-- Streamlit app at `localhost 8501`
+- RStudio at `localhost:8787`
+- Streamlit app at `localhost:8501`
 
-EOF
+
+## Conclusion
+Now you can edit remote files and access to web interfaces running on storm directly from the comfort of your home laptop.
+
+This makes working on storm more efficient, intuitive and neat. It also dramatically speeds up the access to services running in web interfaces.
+
+Also, you can install the Python extension of VS code, create python virtual environments and develop your python scripts inside VS code using those virtual environments.
+
+Last but not least, as already mentioned, the access via public key makes connecting to storm faster and more secure. Indeed, the same method is the only accept nowadays to push locally developed code to your GitHub repos, so here you also learnt how to do that.
+
+all the best,
+leonardo
