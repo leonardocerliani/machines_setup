@@ -122,5 +122,5 @@ Also, you can install the Python extension of VS code, create python virtual env
 
 Last but not least, as already mentioned, the access via public key makes connecting to storm faster and more secure. Indeed, the same method is the only accept nowadays to push locally developed code to your GitHub repos, so here you also learnt how to do that.
 
-all the best,
+all the best,\
 leonardo
