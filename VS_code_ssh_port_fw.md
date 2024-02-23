@@ -97,6 +97,10 @@ Now it finally comes the part of port forwarding. In the terminal, we can open t
 
 ![](imgs/vscode_port_fwarding.png)
 
-All of these services on the remote storm server will now be available in our local browser
+All of these services on the remote storm server will now be available in our local browser. Specifically, we will have the following service at the corresponding ports:
+
+- jupyter notebook at `localhost:8888`
+- RStudio at `localhost 8787`
+- Streamlit app at `localhost 8501`
 
 EOF
