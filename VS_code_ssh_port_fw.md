@@ -28,12 +28,12 @@ This establishes a connection with the server `storm.machine.nl` so that the cal
 
 At this point we can open RStudio in our local browser entering `localhost:8787` in the address.
 
-The first port is the local one, while the second is the remote, so if we would have used e.g. `7777:localhost:8787` we would have opened RStudio on out home computer by pointing to `localhost:7777`
+The first port is the local one, while the second is the remote, so if we would have used e.g. `7777:localhost:8787` we would have opened RStudio on out home computer by pointing our browser to `localhost:7777`
 
 ## SSH with public key
 If we access this connection very often, it can become annoying to enter every time the password. To avoid this we can instead access using a _public key_.
 
-To create a public key, we should make sure that we have OpenSSH to create a pair of private and public keys on our computer. Usually these are stored in the `~/.ssh` directory (where `~` represents the home, such as in `/home/pippo`). Usually this is already installed.
+To create a public key, we should make sure that we have OpenSSH (usually it's already installed) to create a pair of private and public keys on our computer. Usually these are stored in the `~/.ssh` directory (where `~` represents the home, such as in `/home/pippo`).
 
 To create this keys pair, we first enter the `~/.ssh` directory (we create it if it does not exist yet) and issue
 
@@ -52,7 +52,7 @@ The first one - `id_rsa` - is out _private key_. This should stay on our compute
 
 The second one - `id_rsa.pub` - is the _public key_, that we can share with anybody. In our specific case, with the server we want to connect to.
 
-Specifically, we want to copy the content of `id_rsa.pub` inside the file `~/.ssh/authorized_keys` _on the remote server_. In our case, on `storm.machine.nl`. Again if the file does not exist in the first place we can created it. If there are already other public keys in that file, just place this newly created public key in the lines below the existing keys.
+Specifically, we want to copy the content of `id_rsa.pub` inside the file `~/.ssh/authorized_keys` _on the remote server_. In our case, on `storm.machine.nl`. Again if the file does not exist in the first place we can create it. If there are already other public keys in that file, just place this newly created public key in the lines below the existing keys.
 
 Now we can log out of `storm.machine.nl`, and next time we will connect with `ssh pippo@storm.machine.nl` - or with the port forwarding version above - we will have access to the server without having to enter the pw.
 
