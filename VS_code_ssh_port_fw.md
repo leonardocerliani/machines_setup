@@ -52,7 +52,7 @@ id_rsa.pub
 
 The first one - `id_rsa` - is out _private key_. This should stay on our computer, and _never_ to be shared with anyone.
 
-The second one - `id_rsa.pub` - is the _public key_, that we can share with anybody. In our specific case, with the server we want to connect to.
+The second one - `id_rsa.pub` - is the _public key_, that we can share with anybody we want. In our specific case, with the server we want to connect to.
 
 Specifically, we want to copy the content of `id_rsa.pub` inside the file `~/.ssh/authorized_keys` _on the remote server_. In our case, on `storm.machine.nl`. Again if the file does not exist in the first place we can create it. If there are already other public keys in that file, just place this newly created public key in the lines below the existing keys.
 
