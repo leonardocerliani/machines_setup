@@ -13,7 +13,12 @@ Many services running on servers provide web interfaces on a specific port, e.g.
 
 In many cases, it is not possible - or not advisable - to use them on an X interface directly on the server (e.g. with `ssh -X`). Rather it's convenient to forward to the remote server the calls we make to the local port on our local computer, so that we can use the web interface in our local browser.
 
-This can be done using _port forwarding_ in the ssh call.
+This can be done using _port forwarding_ in the ssh call. 
+
+VS code provides a simple way to start/stop port forwarding for multiple ports without the need to open one terminal for each of the ports we need.
+
+If you are already familiar with ssh calls using port forwarding, ssh config file, private/public keys, you can skip to [Connection and port forwarding using VS code](#connection-and-port-forwarding-using-vs-code). Otherwise, let's proceed by small steps.
+
 
 ## SSH from the terminal with username and pw
 For instance let's say that we have a user `pippo` who can connect via ssh to a server `storm.machine.nl` where an RStudio server is running on port 8787.
