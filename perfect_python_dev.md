@@ -13,7 +13,7 @@ After long experimentations with _many_ different environments, I found one that
 
 It is not as perfect as RStudio, but that's the closest I got to. If you have suggestions for improvements, you are more than welcome.
 
-For scripts development, I find VS code unparalleled. It automatically detects local virtual environments (hereafter venv) and allows you to evaluate 
+For scripts development, I find VS code great. It automatically detects local virtual environments (hereafter venv) and allows you to evaluate single lines and code selections.
 
 For notebooks, I find VS code still a bit in its early stage: there can be confusion between evaluating lines/cells in the associated terminal or in the interactive viewer, and also plots and tables appear in the interactive viewer, rather than inline.
 
@@ -95,7 +95,14 @@ the first part of the complete file should like like the following
 Of course you can use any other shortcut is more convenient for you rather than `Ctrl+Shift+Enter`
 
 
+**Why I like it**
 
+
+
+**Limitations**
+With respect to RMarkdown, here you need to
+- make a pretty hidden modification in the settings
+- 
 
 
 
