@@ -5,11 +5,11 @@ NB: subject to many changes as I find improvements
 
 
 ## Why
-Once you have experience developing R using Rmarkdown in Rstudio, everything else looks like a pale attempt to imitate perfection.
+Once you have experience developing in R using Rmarkdown in Rstudio, everything else looks like a pale attempt to imitate perfection.
 
-I understand that the prototypical python developer _should_ be a serious and rough guy who doesn't mind suffering and adapting to develop in win notepad. Instead I believe that developing code is already burdening your brain enough (a very pleasant burden, I beg to stress) that you should not worry about the quirks of a poor development environment. 
+I understand that the prototypical python developer _should_ be a serious and rough guy who doesn't mind suffering and adapting to develop in notepad. Instead I believe that developing code is already burdening your brain enough (a very pleasant burden, I want to stress) that you should not worry about the quirks of a poor development environment. 
 
-After long experimentations with many different environments, I found the perfect environment for me. Maybe it can help you too.
+After long experimentations with _many_ different environments, I found one that works for me. 
 
 It is not as perfect as RStudio, but that's the closest I got to. If you have suggestions for improvements, you are more than welcome.
 
@@ -50,9 +50,26 @@ To enable a keyboard shortcut you can follow the instructions [here](https://sta
 
 Go to `Settings > Settings Editor > JSON Settings Editor`, which will open the Advanced Settings Editor
 
-Now you can add the following snippet to the shortcuts:
+Now you can add the following snippet as a new item to the shortcuts list:
 
 ```json
+{
+    "command": "notebook:run-in-console",
+    "keys": [
+        "Ctrl Shift Enter"
+    ],
+    "selector": ".jp-Notebook.jp-mod-editMode",
+    "args": {}
+},
+```
+
+the first part of the complete file should like like the following
+
+<details><summary>toggle shortcuts</summary>
+
+```json
+{
+    "shortcuts": [
         {
             "command": "notebook:run-in-console",
             "keys": [
@@ -61,7 +78,23 @@ Now you can add the following snippet to the shortcuts:
             "selector": ".jp-Notebook.jp-mod-editMode",
             "args": {}
         },
+        {
+            "command": "application:activate-next-tab",
+            "keys": [
+                "Ctrl Shift ]"
+            ],
+            "selector": "body",
+            "args": {}
+        },
+
 ```
+</details>
+
+<br>
+
+Of course you can use any other shortcut is more convenient for you rather than `Ctrl+Shift+Enter`
+
+
 
 
 
