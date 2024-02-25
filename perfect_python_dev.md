@@ -7,7 +7,7 @@ NB: subject to many changes as I find improvements
 ## Why
 Once you have experience developing in R using Rmarkdown in Rstudio, everything else looks like a pale attempt to imitate perfection.
 
-I understand that the prototypical python developer _should_ be a serious and rough guy who doesn't mind suffering and adapting to develop in notepad. Instead I believe that developing code is already burdening your brain enough (a very pleasant burden, I want to stress) that you should not worry about the quirks of a poor development environment. 
+I understand that the prototypical python developer _should_ be a serious and rough guy who doesn't mind suffering and adapting to develop in notepad. Instead I believe that developing code is already burdening your brain enough (a very pleasant burden, I want to stress) that you should not worry about the quirks of a poor development environment. (One day I will get to Vim, I promise...)
 
 After long experimentations with _many_ different environments, I found one that works for me. 
 
@@ -24,6 +24,9 @@ To be fair, the (my) perfect python notebook development environment _did alread
 The best alternative I found so far is jupyter _lab_ (not jupyter notebook)
 
 ## Setting up jupyter lab
+
+### Setting up the virtual environment
+
 I prefer to work in a venv. In this case you just need to 
 
 ```bash
@@ -36,14 +39,17 @@ pip install jupyter notebook jupyterlab
 jupyter lab
 ```
 
-**Basic keybindings**
+### Basic keybindings
+
 - A : Add code cell above
 - B : add code cell below
 - D-D : Delete the code cell
 - M : convert default code cell to markdown
 - Shift + Enter : evaluate current cell
 
-**Evaluating selection**
+
+### Evaluating a code selection
+
 They make it as hard as possible for you to do this, but there _is_ a way. Once you are in a cell and have selected some code, if you check the Run menu it will show _Run Selected Text or Current Line in Console_. Without a keyboard shortcut...
 
 To enable a keyboard shortcut you can follow the instructions [here](https://stackoverflow.com/questions/56460834/how-to-run-a-single-line-or-selected-code-in-a-jupyter-notebook-or-jupyterlab-ce) or read further.
@@ -95,14 +101,16 @@ the first part of the complete file should like like the following
 Of course you can use any other shortcut is more convenient for you rather than `Ctrl+Shift+Enter`
 
 
-**Why I like it**
+### Why I like it
+
+I must admit that it's quite a luxury to be able to install an entire web-based IDE using a single - and never failing, at least for me - pip install.
 
 
-
-**Limitations**
+### What could be improved (IMHO)
 With respect to RMarkdown, here you need to
-- make a pretty hidden modification in the settings
-- 
+- find your way to a pretty hidden location in the settings
+- learn a couple of keybindings 
+
 
 
 
