@@ -1,6 +1,9 @@
 # Shaping the perfect python notebook environment
 (at least for me)
 
+NB: subject to many changes as I find improvements
+
+
 ## Why
 Once you have experience developing R using Rmarkdown in Rstudio, everything else looks like a pale attempt to imitate perfection.
 
@@ -17,6 +20,52 @@ For notebooks, I find VS code still a bit in its early stage: there can be confu
 Importantly - _very_ importantantly for me - you cannot evaluate a single line/selection inside a code cell. 
 
 To be fair, the (my) perfect python notebook development environment _did already exist_: it was in the beautiful Atom editor with the Hydrogen extension. However, sadly in 2022 the decision was taken to "sunset" it, so now it can be a real hassle to make it work.
+
+The best alternative I found so far is jupyter _lab_ (not jupyter notebook)
+
+## Setting up jupyter lab
+I prefer to work in a venv. In this case you just need to 
+
+```bash
+# create the venv and install jupyter lab
+python -m venv pjl_venv
+source pjl_venv/bin/activate
+pip install jupyter notebook jupyterlab
+
+# then launch it with
+jupyter lab
+```
+
+**Basic keybindings**
+- A : Add code cell above
+- B : add code cell below
+- D-D : Delete the code cell
+- M : convert default code cell to markdown
+- Shift + Enter : evaluate current cell
+
+**Evaluating selection**
+They make it as hard as possible for you to do this, but there _is_ a way. Once you are in a cell and have selected some code, if you check the Run menu it will show _Run Selected Text or Current Line in Console_. Without a keyboard shortcut...
+
+To enable a keyboard shortcut you can follow the instructions [here](https://stackoverflow.com/questions/56460834/how-to-run-a-single-line-or-selected-code-in-a-jupyter-notebook-or-jupyterlab-ce) or read further.
+
+Go to `Settings > Settings Editor > JSON Settings Editor`, which will open the Advanced Settings Editor
+
+Now you can add the following snippet to the shortcuts:
+
+```json
+        {
+            "command": "notebook:run-in-console",
+            "keys": [
+                "Ctrl Shift Enter"
+            ],
+            "selector": ".jp-Notebook.jp-mod-editMode",
+            "args": {}
+        },
+```
+
+
+
+
 
 
 
