@@ -105,7 +105,9 @@ Of course you can use any other shortcut is more convenient for you rather than 
 
 I must admit that it's quite a luxury to be able to install an entire web-based IDE using a single - and never failing, at least for me - pip install.
 
-On top of that, being a web interface, you can install it on any remote server, ssh using port forwarding and have it in your own local browser. Not bad at all
+On top of that, being a web interface, you can install it on any remote server, ssh using port forwarding and have it in your own local browser. Not bad at all.
+
+This is a _great_ plus with respect to RStudio server, whose installation can require (based on my experience) a lot of painful time (besides, it' unlikely that you want to install RStudio server on each one of your 1,000 remote machines...)
 
 Since jupyterlab is installed via pip, you can just pip freeze you venv to a requirements file and then have exactly the same vevn with jupyterlab in your remote server (`pip install -r requirements.txt`)
 
