@@ -125,6 +125,9 @@ Another thing that is not ideal - but it's a tradeoff with the previous item - i
 jupyter nbconvert --to markdown YourNotebook.ipynb
 ```
 
+You can also export to html, however one _big_ issue related to this is that you cannot have code folding in exported web page. (But maybe this will [change](https://stackoverflow.com/questions/33159518/collapse-cell-in-jupyter-notebook)?)
+
+
 
 
 
