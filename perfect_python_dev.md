@@ -105,12 +105,25 @@ Of course you can use any other shortcut is more convenient for you rather than 
 
 I must admit that it's quite a luxury to be able to install an entire web-based IDE using a single - and never failing, at least for me - pip install.
 
+On top of that, being a web interface, you can install it on any remote server, ssh using port forwarding and have it in your own local browser. Not bad at all
+
+Since jupyterlab is installed via pip, you can just pip freeze you venv to a requirements file and then have exactly the same vevn with jupyterlab in your remote server (`pip install -r requirements.txt`)
+
 
 ### What could be improved (IMHO)
 With respect to RMarkdown, here you need to
 - find your way to a pretty hidden location in the settings
 - learn a couple of keybindings 
 
+Besides this, there is the fact that it is not pure text as RMarkdown, hence the necessity to learn the keybindings. Personally, I also like to see only text in front of me. But that's just me.
+
+On the other hand, since the result is a regular .ipynb notebook, once you have it on githun it is properly rendered - which is not the case for RMarkdown
+
+Another thing that is not ideal - but it's a tradeoff with the previous item - is the fact that it is not pure markdown, so if you want to post it e.g. as an article, you still need to convert it to markdown
+
+```bash
+jupyter nbconvert --to markdown YourNotebook.ipynb
+```
 
 
 
