@@ -40,9 +40,9 @@ If you are using many services, it is common to use the same port number for the
 ## SSH with public key
 If we access this connection very often, it can become annoying to enter every time the password. To avoid this we can instead access using a _public key_.
 
-To create a public key, we should make sure that we have OpenSSH (usually it's already installed) to create a pair of private and public keys on our computer. Usually these are stored in the `~/.ssh` directory (where `~` represents the user's home, such as in `/home/pippo`).
+To create a public key, we should make sure that we have OpenSSH (usually it's already installed) on our laptop to create a pair of private and public keys. Usually these are stored in the `~/.ssh` directory (where `~` represents the user's home, such as in `/home/pippo`).
 
-To create this keys pair, we first enter the `~/.ssh` directory (we create it if it does not exist yet) and issue
+To create this keys pair, we first enter the `~/.ssh` directory _ON OUR LOCAL COMPUTER_ (we create it if it does not exist yet) and issue
 
 ```bash
 ssh-keygen
@@ -55,13 +55,23 @@ id_rsa
 id_rsa.pub
 ```
 
-The first one - `id_rsa` - is out _private key_. This should stay on our computer, and _never_ to be shared with anyone.
+The first one - `id_rsa` - is our _private key_. This should stay on our computer, and _never_ to be shared with anyone.
 
 The second one - `id_rsa.pub` - is the _public key_, that we can share with anybody we want. In our specific case, with the server we want to connect to.
 
-Specifically, we want to copy the content of `id_rsa.pub` inside the file `~/.ssh/authorized_keys` _on the remote server_. In our case, on `storm.machine.nl`. Again if the file does not exist in the first place we can create it. If there are already other public keys in that file, just place this newly created public key in the lines below the existing keys.
+Specifically, we want to copy the content of `id_rsa.pub` inside the file `~/.ssh/authorized_keys` _ON THE REMOTE SERVER_. In our case, on `storm.machine.nl`. Again if the file does not exist in the first place we can create it. If there are already other public keys in that file, just place this newly created public key in the lines below the existing keys.
 
 Now we can log out of `storm.machine.nl`, and next time we will connect with `ssh pippo@storm.machine.nl` - or with the port forwarding version above - we will have access to the server without having to enter the pw.
+
+To recapitulate, we should have the following setting:
+
+on our LOCAL computer (i.e. our home laptop):
+- .ssh/id_rsa
+- .ssh/id_rsa.pub
+
+on the REMOTE server (i.e. storm in our case)
+- .ssh/authorized_keys containing the content of the id_rsa.pub file we created on our local computer
+
 
 Note that not only this method is more efficient, but also more secure, because it does not require to enter the password (that somebody unwanted might be seeing)
 
@@ -79,7 +89,7 @@ Yes. You can use VS code to manage all of this connections and script editing.
 
 
 ### Create a local `.ssh/config` file
-First, you want to add one more file to your local ssh directory, specifically `~/.ssh/config`. In this file you will describe your connection to storm with the following lines:
+First, you want to add one more file to your local ssh directory (i.e. the .ssh directory on your laptop), namely `~/.ssh/config`. In this file you will describe your connection to storm with the following lines:
 
 ```bash
 Host storm
