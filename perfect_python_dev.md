@@ -4,6 +4,31 @@
 NB: subject to many changes as I find improvements
 
 
+## Update April 2025 TLDR
+
+- Script dev in VS code
+- Notebook dev in Colab with local kernel
+
+In this way you have access to data/.env in your _local_ machine and all the perks of running a decent nb like the one from Colab.
+
+How to set it up:
+
+1. Local `venv` with `jupyter notebook ipython`
+2. Launch `jupyter notebook` on a free port (8888, 8899, whatever) (note the last line)
+
+```bash
+jupyter notebook \
+    --NotebookApp.allow_origin='https://colab.research.google.com' \
+    --port=8889 \
+    --NotebookApp.port_retries=0 \
+    --NotebookApp.allow_credentials=True
+```
+
+3. Open VS code and open the same port
+4. Go in Colab and [connect to that local runtime](https://research.google.com/colaboratory/local-runtimes.html)
+
+
+
 ## Why
 Once you have experience developing in R using Rmarkdown in Rstudio, everything else looks like a pale attempt to imitate perfection.
 
