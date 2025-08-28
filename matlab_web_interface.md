@@ -1,4 +1,4 @@
-Thanks to Sir Owain Kenway for this [video](https://www.youtube.com/watch?v=w8xCLxd7H0o) and the associated [github repo](https://github.com/owainkenwayucl/Garbage/tree/master/snippets/Matlab-Jupyter).
+Thanks to [**Sir Owain Kenway**](https://www.youtube.com/@owainkenway/videos) for this [video](https://www.youtube.com/watch?v=w8xCLxd7H0o) and the associated [github repo](https://github.com/owainkenwayucl/Garbage/tree/master/snippets/Matlab-Jupyter).
 
 My implementation (simpler requirements):
 
@@ -21,6 +21,8 @@ jupyter lab --no-browser --port=5100
 
 4. Enjoy `localhost:5100` in your local browser (you might need to cp/paste the full address with the token)
 
+
+P.S. Apparently also at Mathworks they are developing their own [`matlab-proxy`](https://github.com/mathworks/matlab-proxy)
 
 
  
