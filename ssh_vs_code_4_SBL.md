@@ -18,6 +18,7 @@ LC October 2025
   - [Jupyter notebooks](#jupyter-notebooks)
   - [Google Colab](#google-colab)
   - [Matlab](#matlab)
+- [Github bonus](#github-bonus)
 
 
 
@@ -297,7 +298,7 @@ Thanks to [**Sir Owain Kenway**](https://www.youtube.com/@owainkenway/videos) fo
 
 My implementation (simpler requirements):
 
-1. Create a python venv on stroom with the following `requirements.txt`
+1. Create a python venv on storm with the following `requirements.txt`
 
 ```python
 jupyterlab 
@@ -314,4 +315,17 @@ jupyter lab --no-browser --port=5100
 
 3. Connect to stroom with VS code and open the corresponding port.
 
-4. Enjoy `localhost:5100` in your local browser (you might need to cp/paste the full address with the token)
+4. Open the Matlab web-UI from jupyter lab
+
+   ![](assets/matlab.png)
+
+5. Enjoy Matlab-in-the-browser at `localhost:5100` in your local browser (the first time it might take 10-20 seconds and you might need to cp/paste the full address with the token)
+
+
+
+# Github bonus
+
+As mentioned, SSH access is much more secure than using username and password, and you need to go through the struggle to set it up only once. It is so secure that Github does not allow anymore access using uname/pw, but also through SSH key. And now you can do it. If you want an explanation of how to add your public key to github [read here](https://github.com/leonardocerliani/github_collab_basic/blob/main/ssh_keys.md).
+
+
+
